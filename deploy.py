@@ -21,7 +21,7 @@ async def root(key: str = Form(), *, data: UploadFile):
     dirname = PurePath(data.filename).stem # The target directory name
     dest_dir = (export_path / dirname)
     exists = False
-    rand_hash = "{:x}".format(randrange(0, 2**48))
+    rand_hash = ".{:x}".format(randrange(0, 2**48))
     if dest_dir.exists():
         dest_dir.rename(dest_dir.with_suffix(rand_hash))
         exists = True
