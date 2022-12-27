@@ -19,4 +19,4 @@ Once the file is made, run `docker build -t zip-deployer .` to build the image.
 
 ## Usage
 
-To run the server, run `docker run -p 8000:8000 zip-deployer`.
+To run the server, run `docker run -p 8000:8000 -v /out/real-directory:/directory zip-deployer`.
