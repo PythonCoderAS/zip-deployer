@@ -13,7 +13,7 @@ new_url = "https://my-staging-%s.example.com"
 
 The secret key should be a unique and _not shared_ key as this allows anyone to write arbitrary files to your server and have the browser return them.
 
-The new_url has one modifier (specified with %s): The name of the zip file without the extension.
+The new_url has one modifier (specified with `%s`): The name of the zip file without the extension.
 
 Once the file is made, run `docker build -t zip-deployer .` to build the image.
 
